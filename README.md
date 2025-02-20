@@ -17,8 +17,11 @@ Install dependencies
 
 Starting Django
 ```bash
-  later input cli here
+  cd cccup
+  python manage.py runserver
 ```
+
+it runs on https://localhost:8000
 
 klo bingung liat https://docs.djangoproject.com/en/5.1/, stop minta minta tutorial dr gw, ud gede.
 ## [⚙️] Tech Stack

@@ -1,7 +1,7 @@
 
-# CCCUP-2026
+# CCCUP-XL
 
-Website CCCUP 2026(nyicil)
+Website CCCUP XL(nyicil)
 ## [🕹️] Start Contributing
 
 Start new python venv

@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request, *args, **kwargs):
-    return HttpResponse("This is the Api page.")
+    context = {
+        'message': 'hello admin from django'
+    }
+    return render(request, 'admin/index.html', context)

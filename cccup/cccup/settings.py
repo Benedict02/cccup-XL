@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'frontend',
+    'api',
     'django_hosts',
 ]
 
@@ -56,8 +58,12 @@ MIDDLEWARE = [
     'django_hosts.middleware.HostsResponseMiddleware',
 ]
 
-ROOT_URLCONF = 'cccup.hosts'
+# Use the hosts module for subdomain routing
+ROOT_HOSTCONF = 'cccup.hosts'
 DEFAULT_HOST = 'www'
+
+# The main URL configuration for your default host (e.g., www.cccup.id)
+ROOT_URLCONF = 'cccup.urls'
 
 TEMPLATES = [
     {

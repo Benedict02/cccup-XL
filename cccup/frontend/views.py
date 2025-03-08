@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request, *args, **kwargs):
-    return HttpResponse("This is the Home page.")
+    context = {
+        'message': 'hello from django'
+    }
+    return render(request, 'frontend/index.html', context)
